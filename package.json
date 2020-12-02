@@ -5,10 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "setup": "npm run setup:dittnav && npm run setup:vta && npm run setup:registrering",
+    "setup": "npm run setup:dittnav && npm run setup:vta && npm run setup:registrering && npm i",
     "setup:dittnav": "cd layouts/dittnav && npm i",
     "setup:vta": "cd podlets/vta && npm i",
-    "setup:registrering": "cd podlets/vta && npm i"
+    "setup:registrering": "cd podlets/vta-registrering && npm i",
+    "build:vta": "cd podlets/vta && npm run build",
+    "build:registrering": "cd podlets/vta && npm run build",
+    "build": "npm run build:vta && npm run build:registrering",
+    "start:layout": "cd layouts/dittnav && npm run layout",
+    "start:vta": "cd podlets/vta && npm run podlet",
+    "start:registrering": "cd podlets/vta-registrering && npm run podlet",
+    "start": "concurrently \"npm run start:layout\" \"npm run start:vta\" \"npm run start:registrering\""
   },
   "repository": {
     "type": "git",
@@ -20,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/zrrrzzt/podium-poc/issues"
   },
-  "homepage": "https://github.com/zrrrzzt/podium-poc#readme"
+  "homepage": "https://github.com/zrrrzzt/podium-poc#readme",
+  "dependencies": {
+    "concurrently": "5.3.0"
+  }
 }
