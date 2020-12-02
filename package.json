@@ -12,10 +12,14 @@
     "build:vta": "cd podlets/vta && npm run build",
     "build:registrering": "cd podlets/vta && npm run build",
     "build": "npm run build:vta && npm run build:registrering",
+    "refresh:dittnav": "cd layouts/dittnav && rm -rf node_modules && rm package-lock.json && npm i",
+    "refresh:vta": "cd podlets/vta && rm -rf node_modules && rm package-lock.json && npm i",
+    "refresh:registrering": "cd podlets/vta-registrering && rm -rf node_modules && rm package-lock.json && npm i",
     "start:layout": "cd layouts/dittnav && npm run layout",
     "start:vta": "cd podlets/vta && npm run podlet",
     "start:registrering": "cd podlets/vta-registrering && npm run podlet",
-    "start": "concurrently \"npm run start:layout\" \"npm run start:vta\" \"npm run start:registrering\""
+    "start": "concurrently \"npm run start:layout\" \"npm run start:vta\" \"npm run start:registrering\"",
+    "refresh": "concurrently \"rm -rf node_modules && rm package-lock.json && npm i\" \"npm run refresh:dittnav\" \"npm run refresh:vta\" \"npm run refresh:registrering\""
   },
   "repository": {
     "type": "git",
