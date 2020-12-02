@@ -27,6 +27,7 @@ assets.entrypoints.forEach((element, index) => {
 
 app.use(podlet.middleware())
 app.use('/static', express.static('./build/static'))
+app.use('/', express.static('./build/'))
 
 app.get(podlet.content(), (req, res) => {
   res.status(200).podiumSend(`<div id="${name}"></div>`)
