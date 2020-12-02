@@ -1,0 +1,24 @@
+{
+  "name": "podium-poc",
+  "version": "1.0.0",
+  "description": "Rask test av podium",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "npm run setup:dittnav && npm run setup:vta && npm run setup:registrering",
+    "setup:dittnav": "cd layouts/dittnav && npm i",
+    "setup:vta": "cd podlets/vta && npm i",
+    "setup:registrering": "cd podlets/vta && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zrrrzzt/podium-poc.git"
+  },
+  "keywords": [],
+  "author": "Geir Gåsodden <geir.gasodden@pythonia.no> (https://github.com/zrrrzzt)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zrrrzzt/podium-poc/issues"
+  },
+  "homepage": "https://github.com/zrrrzzt/podium-poc#readme"
+}
