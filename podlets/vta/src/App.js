@@ -1,5 +1,6 @@
 import Panel from 'nav-frontend-paneler'
 import { Normaltekst, Sidetittel } from 'nav-frontend-typografi';
+import DadJoke from './components/dad-joke'
 import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
           Denne teksten er helt normal
         </Normaltekst>
       </Panel>
+      <DadJoke />
     </div>
   );
 }
