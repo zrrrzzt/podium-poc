@@ -33,6 +33,6 @@
   },
   "homepage": "https://github.com/zrrrzzt/podium-poc#readme",
   "dependencies": {
-    "concurrently": "6.0.1"
+    "concurrently": "6.0.2"
   }
 }
