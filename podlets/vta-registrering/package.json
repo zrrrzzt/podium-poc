@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@podium/podlet": "4.4.27",
+    "@podium/podlet": "4.4.29",
     "@testing-library/jest-dom": "5.13.0",
     "@testing-library/react": "11.2.7",
     "@testing-library/user-event": "13.1.9",
