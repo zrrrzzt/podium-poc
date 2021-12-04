@@ -5,7 +5,7 @@
   "dependencies": {
     "@craco/craco": "6.4.0",
     "@podium/podlet": "4.4.45",
-    "@testing-library/jest-dom": "5.15.0",
+    "@testing-library/jest-dom": "5.16.0",
     "@testing-library/react": "12.1.2",
     "@testing-library/user-event": "13.5.0",
     "axios": "0.24.0",
