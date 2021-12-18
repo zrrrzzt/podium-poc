@@ -12,6 +12,6 @@
   "license": "MIT",
   "dependencies": {
     "@podium/layout": "4.6.107",
-    "express": "4.17.1"
+    "express": "4.17.2"
   }
 }
