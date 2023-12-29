@@ -7,7 +7,7 @@
     "@podium/podlet": "4.4.64",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "12.1.5",
-    "@testing-library/user-event": "13.5.0",
+    "@testing-library/user-event": "14.5.2",
     "axios": "0.27.2",
     "classnames": "2.3.1",
     "craco-less": "2.0.0",
