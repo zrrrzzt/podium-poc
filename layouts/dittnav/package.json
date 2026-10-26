@@ -11,7 +11,7 @@
   "author": "Geir Gåsodden <geir.gasodden@pythonia.no> (https://github.com/zrrrzzt)",
   "license": "MIT",
   "dependencies": {
-    "@podium/layout": "4.6.111",
+    "@podium/layout": "4.6.125",
     "express": "4.18.1"
   }
 }
